@@ -5,6 +5,36 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-italic';
+  src: url('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RoughPunch';
+  src: url('./assets/fonts/Rough.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'headingTitleName';
+  src: url('./assets/fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aldrich';
+  src: url('./assets/fonts/Aldrich-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .App {
   text-align: center;

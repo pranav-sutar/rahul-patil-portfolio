@@ -14,7 +14,7 @@ export default function SplashScreen() {
       <div className="splash-title-container">
         {/* <span className="grey-color"> &lt;</span> */}
         {/* <span className="splash-title">{greeting.username}</span> */}
-        <span className="splash-title">It's Rahul Patil 👋</span>
+        <span className="splash-title">Explore. Create. Inspire.</span>
         {/* <span className="grey-color">/&gt;</span> */}
       </div>
     </div>

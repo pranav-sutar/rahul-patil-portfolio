@@ -27,7 +27,7 @@ export default function Greeting() {
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                {/* <span className="wave-emoji">{emoji("👋")}</span> */}
               </h1>
               <p
                 className={
@@ -39,8 +39,8 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
-              <SocialMedia />
-              <div className="button-greeting-div">
+              {/* <SocialMedia /> */}
+              {/* <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
@@ -64,7 +64,7 @@ export default function Greeting() {
                     />
                   </a>
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <div className="greeting-image-div">

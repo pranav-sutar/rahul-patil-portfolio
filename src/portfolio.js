@@ -34,13 +34,14 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // github: "https://github.com/saadpasta",
+  linkedin:
+    "https://www.linkedin.com/in/rahul-patil-3a3731267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  gmail: "rahuldpatil17@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -121,6 +122,24 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
+// y -- New Part -- Research Interests -- (T)
+
+const researchInterests = {
+  title: "Research Interests",
+  subTitle:
+    "I’m driven by curiosity: Designing machines that move, think, and interact seamlessly with their environment",
+  skills: [
+    emoji(
+      "⚡ Design and optimization of mechanical systems for robotic mobility, actuation, and structural efficiency Development of integrated multi degree of freedom mechanisms for stable and adaptable motion in diverse environments"
+    ),
+    emoji(
+      "⚡ Applications: Humanoid Robots, Medical and Surgical Robots, Soft Robotics, Industrial Robots and Automation"
+    )
+  ]
+};
+
+// y -- New Part -- Research Interests -- (B)
+
 // Education Section
 
 const educationInfo = {
@@ -129,16 +148,15 @@ const educationInfo = {
     {
       schoolName: "Government College of Engineering Karad, Maharashtra, India",
       logo: require("./assets/NewImages/karad_logo.png"),
-      subHeader:
-        "Bachelor of Technology (B. Tech) Mechanical Engineering | CGPA 7.56",
-      duration: "2021 - 2025",
-      desc: "Relevant courses:",
-      descBullets: [
-        "Machine Design",
-        "Theory of Machine",
-        "Dynamics of Machine",
-        "Manufacturing Engineering"
-      ]
+      subHeader: "Bachelor of Technology (B. Tech) Mechanical Engineering"
+      // duration: "2021 - 2025",
+      // desc: "Relevant courses:",
+      // descBullets: [
+      //   "Machine Design",
+      //   "Theory of Machine",
+      //   "Dynamics of Machine",
+      //   "Manufacturing Engineering"
+      // ]
     }
     // {
     //   schoolName: "Stanford University",
@@ -179,6 +197,28 @@ const techStack = {
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
+const experienceData = {
+  experience: [
+    {
+      title: "Project Staff - IIT Bombay",
+      subtitle: "Project Technical Assistant - INDUS Lab",
+      time: "Aug 2025 - Present",
+      image: require("./assets/images/IIT_logo.png"),
+      description:
+        "Contributed to the design and research of a bipedal robot, focusing on mechanical structure and motion analysis.",
+      display: true // Set false to hide this section, defaults to true
+    },
+    {
+      title: "Internship - IIT Bombay",
+      subtitle: "Mechanical Engineering Intern - INDUS Lab",
+      time: "Jan 2025 - Jun 2025",
+      image: require("./assets/images/IIT_logo.png"),
+      description:
+        "Developed a mechanically optimized ankle joint for a biped robot, designed for strength and smooth motion",
+      display: true // Set false to hide this section, defaults to true
+    }
+  ]
+};
 
 // Work experience section
 
@@ -186,8 +226,8 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Boston Dynamics Inspired Quadruped Robot Design ",
+      // company: "Boston Dynamics Inspired Quadruped Robot Design   ",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2018 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -201,6 +241,27 @@ const workExperiences = {
       company: "Quora",
       companylogo: require("./assets/images/quoraLogo.png"),
       date: "May 2017 – May 2018",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Airbnb",
+      companylogo: require("./assets/images/airbnbLogo.png"),
+      date: "Jan 2015 – Sep 2015",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Airbnb",
+      companylogo: require("./assets/images/airbnbLogo.png"),
+      date: "Jan 2015 – Sep 2015",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Airbnb",
+      companylogo: require("./assets/images/airbnbLogo.png"),
+      date: "Jan 2015 – Sep 2015",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -260,6 +321,17 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "View Project",
           url: "http://nextu.se/"
         }
       ]
@@ -407,10 +479,9 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "Let’s engineer something awesome, Starting with your message!",
+  // number: "+91 9175289138 ",
+  email_address: "rahuldpatil17@gmail.com"
 };
 
 // Twitter Section
@@ -428,6 +499,7 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
+  researchInterests,
   educationInfo,
   techStack,
   workExperiences,
@@ -440,5 +512,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  experienceData
 };

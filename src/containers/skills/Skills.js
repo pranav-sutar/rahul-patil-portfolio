@@ -1,9 +1,10 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {illustration, skillsSection, researchInterests} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
+import researchLottie from "../../assets/lottie/research_lottie.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -18,8 +19,9 @@ export default function Skills() {
         <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
+              <DisplayLottie animationData={researchLottie} />
             ) : (
+              // <DisplayLottie animationData={codingPerson} />
               <img
                 alt="Man Working"
                 src={require("../../assets/images/developerActivity.svg")}
@@ -32,22 +34,24 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {researchInterests.title}{" "}
             </h1>
             <p
+              style={{fontSize: "1.6rem", fontWeight: "bold"}}
               className={
                 isDark
                   ? "dark-mode subTitle skills-text-subtitle"
                   : "subTitle skills-text-subtitle"
               }
             >
-              {skillsSection.subTitle}
+              {researchInterests.subTitle}
             </p>
-            <SoftwareSkill />
+            {/* <SoftwareSkill /> */}
             <div>
-              {skillsSection.skills.map((skills, i) => {
+              {researchInterests.skills.map((skills, i) => {
                 return (
                   <p
+                    style={{fontSize: "1.3rem"}}
                     key={i}
                     className={
                       isDark
