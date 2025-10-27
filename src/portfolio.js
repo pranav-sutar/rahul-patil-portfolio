@@ -20,13 +20,14 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Rahul Patil",
+  title: "Hey! I’m Rahul Patil",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Technical Project Assistant at IIT Bombay who spends most days bringing mechanical ideas to life. I love working on robotic systems  designing, testing, and occasionally chasing down the parts that decide to go missing. My journey started at GCE Karad, but the real adventure began when I stepped into the INDUS (INtelligent Dynamic Ubiquitous System) lab at IIT Bombay. It’s been a fun mix of design challenges, problem-solving, and learning that “temporary fixes” are sometimes more permanent than planned."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -126,24 +127,35 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Government College of Engineering Karad, Maharashtra, India",
+      logo: require("./assets/NewImages/karad_logo.png"),
+      subHeader:
+        "Bachelor of Technology (B. Tech) Mechanical Engineering | CGPA 7.56",
+      duration: "2021 - 2025",
+      desc: "Relevant courses:",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Machine Design",
+        "Theory of Machine",
+        "Dynamics of Machine",
+        "Manufacturing Engineering"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
+    // {
+    //   schoolName: "Stanford University",
+    //   logo: require("./assets/images/stanfordLogo.png"),
+    //   subHeader: "Bachelor of Science in Computer Science",
+    //   duration: "September 2013 - April 2017",
+    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    // },
+    // {
+    //   schoolName: "Stanford University",
+    //   logo: require("./assets/images/stanfordLogo.png"),
+    //   subHeader: "Bachelor of Science in Computer Science",
+    //   duration: "September 2013 - April 2017",
+    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    // }
   ]
 };
 
@@ -197,6 +209,20 @@ const workExperiences = {
       companylogo: require("./assets/images/airbnbLogo.png"),
       date: "Jan 2015 – Sep 2015",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Airbnb",
+      companylogo: require("./assets/images/airbnbLogo.png"),
+      date: "Jan 2015 – Sep 2015",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Airbnb",
+      companylogo: require("./assets/images/airbnbLogo.png"),
+      date: "Jan 2015 – Sep 2015",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
@@ -234,6 +260,17 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "View Project",
           url: "http://nextu.se/"
         }
       ]

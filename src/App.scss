@@ -1,4 +1,10 @@
 @import "./globalColor";
+@font-face {
+  font-family: 'AsiaStyle';
+  src: url('./assets/fonts/SpellOfAsia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .App {
   text-align: center;

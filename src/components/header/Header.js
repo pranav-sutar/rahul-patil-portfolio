@@ -3,6 +3,9 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+
+import arm from "../../assets/NewImages/robotic-arm.png";
+
 import {
   greeting,
   workExperiences,
@@ -28,9 +31,10 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          {/* <span className="grey-color"> &lt;</span> */}
+          <img src={arm} alt="" style={{width: "3rem"}} />
+          <span className="logo-name"> {greeting.username}</span>
+          {/* <span className="grey-color">/&gt;</span> */}
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -51,11 +55,11 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewOpenSource && (
+          {/* {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
             </li>
-          )}
+          )} */}
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
