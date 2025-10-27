@@ -127,8 +127,7 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName:
-        " The Government College of Engineering Karad, Maharashtra, India",
+      schoolName: "Government College of Engineering Karad, Maharashtra, India",
       logo: require("./assets/NewImages/karad_logo.png"),
       subHeader:
         "Bachelor of Technology (B. Tech) Mechanical Engineering | CGPA 7.56",
