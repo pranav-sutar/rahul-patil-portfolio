@@ -3,8 +3,13 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {useHistory} from "react-router-dom";
 
 export default function StartupProject() {
+  const history = useHistory();
+  function goToProject(id) {
+    history.push(`/project/${id}`);
+  }
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -33,10 +38,10 @@ export default function StartupProject() {
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
+            {bigProjects.projects.map((project, projectIndex) => {
               return (
                 <div
-                  key={i}
+                  key={projectIndex}
                   className={
                     isDark
                       ? "dark-mode project-card project-card-dark"
@@ -69,14 +74,23 @@ export default function StartupProject() {
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
                           return (
+                            // <span
+                            //   key={i}
+                            //   className={
+                            //     isDark ? "dark-mode project-tag" : "project-tag"
+                            //   }
+                            //   onClick={() => openUrlInNewTab(link.url)}
+                            // >
+                            //   {link.name}123
+                            // </span>
                             <span
                               key={i}
                               className={
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
-                              onClick={() => openUrlInNewTab(link.url)}
+                              onClick={() => goToProject(projectIndex)}
                             >
-                              {link.name}
+                              View Project
                             </span>
                           );
                         })}
