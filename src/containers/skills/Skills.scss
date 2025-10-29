@@ -61,8 +61,24 @@
     /* display: none; */
     order: 2;
   }
+
 }
+
+// y extra: lottie height adjustment -- (T)
+.skills-image-div {
+  height: 100%; /* Default for mobile */
+}
+
+/* For desktop screens (width ≥ 768px or whatever breakpoint you prefer) */
+@media (min-width: 768px) {
+  .skills-image-div {
+    height: 200px;
+  }
+}
+
+// y extra: lottie height adjustment -- (B)
 
 .lottie-research{
   height: 200px;
 }
+

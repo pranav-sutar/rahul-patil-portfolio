@@ -4,7 +4,7 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection, researchInterests} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
-import researchLottie from "../../assets/lottie/research_lottie.json";
+import researchLottie from "../../assets/lottie/STUDENT.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
