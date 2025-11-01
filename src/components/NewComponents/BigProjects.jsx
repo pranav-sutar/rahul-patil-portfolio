@@ -2,6 +2,7 @@ import React from "react";
 import {useParams, useHistory} from "react-router-dom";
 import {bigProjects} from "../../portfolio";
 import "./BigProjectsCss.css";
+import {Fade} from "react-reveal";
 
 export default function BigProjects() {
   const {id} = useParams();
@@ -10,32 +11,71 @@ export default function BigProjects() {
 
   if (!project) return <h2>Project not found</h2>;
 
-  return (
-    <div style={{padding: "20px"}}>
-      <button
-        onClick={() => history.push("/")}
-        style={{
-          padding: "10px 15px",
-          marginBottom: "20px",
-          borderRadius: "5px",
-          backgroundColor: "#007bff",
-          color: "#fff",
-          border: "none",
-          cursor: "pointer"
-        }}
-      >
-        ← Back to Projects
-      </button>
+  // Collect all image fields dynamically (scr01, scr02, etc.)
+  const imageKeys = Object.keys(project).filter(key => key.startsWith("scr"));
+  const images = imageKeys.map(key => project[key]);
+  const video = project.vid01;
 
-      <h1>{project.projectName}</h1>
-      <p>{project.projectDesc}</p>
-      {project.image && (
-        <img
-          src={project.image}
-          alt={project.projectName}
-          style={{width: "400px", borderRadius: "10px"}}
-        />
-      )}
+  return (
+    <div className="big-project-page">
+      <Fade bottom duration={1000} distance="30px">
+        <button
+          className="big-project-back-btn"
+          onClick={() => history.push("/")}
+        >
+          ← Back to Projects
+        </button>
+
+        <h1 className="big-project-title">{project.projectName}</h1>
+
+        {/* Video Section */}
+        {video && (
+          <div className="big-project-video-container">
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="big-project-video"
+            />
+          </div>
+        )}
+
+        <p className="big-project-description">{project.projectDesc}</p>
+        <p className="Ref_img_title">Reference Images</p>
+
+        {/* Images Section */}
+        <div className="big-project-image-row">
+          {images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={`screenshot-${idx}`}
+              className="big-project-image"
+            />
+          ))}
+        </div>
+      </Fade>
+
+      {/* Description */}
+
+      {/* Optional Footer Link */}
+      {/* {project.footerLink && project.footerLink.length > 0 && (
+        <div className="big-project-footer-links">
+          {project.footerLink.map((link, index) => (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="big-project-footer-link"
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+      )} */}
     </div>
   );
 }

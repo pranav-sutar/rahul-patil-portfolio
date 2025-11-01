@@ -312,9 +312,16 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/BigProjects/Robotic_leg.jpg"),
+      image: require("./assets/Sarang_assets/Biped/scr01.png"),
+      scr01: require("./assets/Sarang_assets/Biped/scr01.png"),
+      scr02: require("./assets/Sarang_assets/Biped/scr02.png"),
+      scr03: require("./assets/Sarang_assets/Biped/scr03.png"),
+      scr04: require("./assets/Sarang_assets/Biped/scr04.png"),
+      vid01: require("./assets/Sarang_assets/Biped/Biped_vid.mp4"),
+
       projectName: "Design of a Support Frame for Walking Biped Robot ",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc:
+        "I designed and optimized a mechanical support frame for a biped robot, focusing on achieving smooth and stable planar motion. The structure provides three degrees of freedom and includes a custom built glass frame mechanism at the hip, allowing precise adjustment of tilt and spacing for perfect alignment. To synchronize the motion of the dual frames, I developed a unique ball screw design with opposing hand threads. Through multiple design iterations, I refined the frame to be lighter, stronger, and easier to assemble. The complete system was modeled and documented in SolidWorks, from concept sketches to fabrication ready technical drawings.",
       footerLink: [
         {
           name: "Visit Website",
@@ -324,9 +331,16 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/BigProjects/test02.png"),
+      image: require("./assets/Sarang_assets/Ankle/scr00.png"),
+      scr01: require("./assets/Sarang_assets/Ankle/scr01.png"),
+      // scr02: require("./assets/Sarang_assets/Ankle/scr02.png"),
+      scr02: require("./assets/Sarang_assets/Ankle/scr03.png"),
+      scr03: require("./assets/Sarang_assets/Ankle/scr04.png"),
+      scr04: require("./assets/Sarang_assets/Ankle/scr05.png"),
+      vid01: require("./assets/Sarang_assets/Ankle/Ankle_vid.mp4"),
       projectName: "Desing of an Ankle joint for Biped Robot",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc:
+        "I developed a mechanically optimized single-axis ankle joint for a biped robot, engineered to deliver strength, precision, and smooth motion. The joint is actuated by a double acting pneumatic actuator, providing ±60° symmetric movement after integrating physical motion constraints to mimic realistic ankle dynamics.To achieve a compact and efficient design, I offset mounted the actuator from the joint axis and refined the structure through iterative design and optimization, ensuring mechanical robustness and manufacturability. The entire assembly was modeled and detailed in SolidWorks, including precise 3D CAD models and fabrication ready drawings.An encoder system was also integrated to capture real time positional feedback of the joint, enabling accurate motion tracking and control during operation.",
       footerLink: [
         {
           name: "Visit Website",
@@ -335,21 +349,17 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/BigProjects/test03.webp"),
+      // image: require("./assets/BigProjects/test03.webp"),
+      image: require("./assets/Sarang_assets/CNC_Enclosure/scr01.png"),
+      scr01: require("./assets/Sarang_assets/CNC_Enclosure/scr02.png"),
+      // scr02: require("./assets/Sarang_assets/Ankle/scr02.png"),
+      scr02: require("./assets/Sarang_assets/CNC_Enclosure/scr03.png"),
+      scr03: require("./assets/Sarang_assets/CNC_Enclosure/scr04.png"),
+      scr04: require("./assets/Sarang_assets/CNC_Enclosure/scr05.png"),
+      vid01: require("./assets/Sarang_assets/CNC_Enclosure/frame_vid.mp4"),
       projectName: "Design of an Enclosure for CNC Router 4540",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "View Project",
-          url: "http://nextu.se/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/BigProjects/test04.webp"),
-      projectName:
-        "40W Laser Engraving Module Air Assist and Pump System Modification ",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc:
+        "I designed and built a sturdy protective enclosure for the CNC Router 4540 using a solid iron extrusion frame to ensure structural rigidity and long-term durability. The enclosure was fitted with acrylic sheets on all sides, except the bottom, to allow natural air circulation while providing full visibility of the machining area.A front access door was integrated, equipped with a handle and magnetic latch for smooth operation and secure closure. To maintain optimal working conditions, I installed an exhaust fan with a duct pipe to efficiently remove dust and heat generated during machining. Since the router is equipped with a laser engraving module, the ventilation system also helps dissipate the additional heat from the laser, ensuring safe and stable performance during operation",
       footerLink: [
         {
           name: "View Project",
@@ -357,6 +367,18 @@ const bigProjects = {
         }
       ]
     }
+    // {
+    //   image: require("./assets/BigProjects/test04.webp"),
+    //   projectName:
+    //     "40W Laser Engraving Module Air Assist and Pump System Modification ",
+    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    //   footerLink: [
+    //     {
+    //       name: "View Project",
+    //       url: "http://nextu.se/"
+    //     }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
