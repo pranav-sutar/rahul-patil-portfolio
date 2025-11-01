@@ -1,14 +1,25 @@
 import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
+import {useHistory} from "react-router-dom";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({cardInfo, isDark, idForNav}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
+  const history = useHistory();
 
   function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+    try {
+      const colorThief = new ColorThief();
+      // ColorThief expects an <img> that's loaded and allowed by CORS; guard it
+      if (imgRef.current && imgRef.current.complete) {
+        const cols = colorThief.getColor(imgRef.current);
+        setColorArrays(cols);
+      }
+    } catch (err) {
+      // if ColorThief fails, silently ignore (prevents crash)
+      // console.warn("ColorThief error:", err);
+    }
   }
 
   function rgb(values) {
@@ -30,6 +41,26 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
+  const handleViewProject = e => {
+    // prevent any parent handlers (optional)
+    if (e && e.stopPropagation) e.stopPropagation();
+
+    // Prefer explicit idForNav passed from parent, else try cardInfo.id/_id
+    const idToUse = idForNav ?? cardInfo.id ?? cardInfo._id ?? null;
+
+    if (!idToUse) {
+      console.error(
+        "ExperienceCard: no id available to navigate. cardInfo:",
+        cardInfo
+      );
+      // fallback action: stay on page or show alert
+      return;
+    }
+
+    // navigate to the key project route (adjust route if you use different path)
+    history.push(`/key_project/${idToUse}`);
+  };
+
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
       <div
@@ -42,9 +73,6 @@ export default function ExperienceCard({cardInfo, isDark}) {
         }}
       >
         <div className="experience-blurred_div"></div>
-        {/* <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
-        </div> */}
 
         <img
           crossOrigin={"anonymous"}
@@ -53,8 +81,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
           src={cardInfo.companylogo}
           alt={cardInfo.company}
           onLoad={() => getColorArrays()}
+          onError={() => {
+            /* ignore image load errors to avoid breaking UI */
+          }}
         />
       </div>
+
       <div className="experience-text-details">
         <h5
           className={
@@ -65,15 +97,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.role}
         </h5>
-        {/* <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5> */}
+
         <p
           className={
             isDark
@@ -83,6 +107,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.desc}
         </p>
+
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
@@ -92,11 +117,11 @@ export default function ExperienceCard({cardInfo, isDark}) {
           style={{
             display: "flex",
             alignItems: "center",
-            widows: "100%",
             justifyContent: "center"
           }}
         >
-          <button>View Project</button>
+          {/* IMPORTANT: use arrow function so handleViewProject is NOT called on render */}
+          <button onClick={e => handleViewProject(e)}>View Project</button>
         </div>
       </div>
     </div>

@@ -238,56 +238,66 @@ const workExperiences = {
       video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       company: "Boston Dynamics Inspired Quadruped Robot Design",
       date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Modeled a quadruped robot in SolidWorks to explore legged locomotion mechanics, incorporating actuated joints and provisions for future sensor integration.",
+      description:
+        "This project focused on exploring the mechanical design principles of quadruped robots through 3D modeling in SolidWorks. Inspired by existing legged robot systems, I created a conceptual model to understand how such robots are structurally designed and mechanically balanced.The model was built using estimated proportions and dimensions, emphasizing realistic joint placement and leg motion. I integrated actuators at the hip and knee joints to visualize functional movement and study kinematic relationships between the limbs. The structure was also designed with space for sensors and electronic components, reflecting how practical implementations accommodate control systems.This project helped me gain insight into robotic leg mechanics, motion symmetry, and the design logic behind quadruped locomotion."
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
       id: 2,
       type: "key",
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "Quadruped Robot Design for Uneven Terrain ",
+      company: "Quadruped Robot Design for Uneven Terrain ",
       back_img: require("./assets/Sarang_assets/KeyProjects/Quadraped/back.png"),
       companylogo: require("./assets/Sarang_assets/KeyProjects/Quadraped/front.png"),
-      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr02.png"),
+      // scr06: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr03.png"),
+      // scr05: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr04.png"),
+      // scr03: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr05.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr06.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Quadraped/quarduped_vid.mp4"),
       date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Designed a quadruped robot with adaptive leg mechanisms capable of moving smoothly over uneven terrain, climbing stairs, and maintaining balance during motion.",
+      description:
+        "This project focused on the design and development of a quadruped robot capable of navigating uneven and rough terrains with smooth, stable motion. The goal was to create a mechanically efficient and balanced structure that could adapt to different environments while maintaining stability and payload capacity.The leg and actuator mechanisms were carefully engineered to enable the robot to climb stairs and carry small payloads, simulating real-world operational challenges. The design incorporated joint articulation and structural flexibility, allowing the robot to maintain balance, absorb shocks, and recover posture automatically after disturbances.The robot concept was developed with potential applications in disaster response, medical assistance, and rescue operations, where autonomous mobility and stability are crucial. The project emphasized mechanical design innovation, functional simulation, and groundwork for future integration of sensors and control systems."
     },
     {
       id: 3,
       type: "key",
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
-      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      role: "3D Boat Modeling and Design",
+      company: "3D Boat Modeling and Design ",
+      back_img: require("./assets/Sarang_assets/KeyProjects/Boat/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Boat/front.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Boat/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Boat/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Boat/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Boat/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Boat/boat_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "This project focused on designing a 3D boat model in SolidWorks to explore complex surface modeling techniques and achieve a realistic, hydrodynamic form.",
+      description:
+        "This project involved the conceptual design and 3D modeling of a boat in SolidWorks, focusing on achieving a hydrodynamic and visually realistic structure. The design process began by establishing multiple reference planes to accurately define the complex hull and deck geometry, ensuring proportional balance and smooth curvature.A combination of Loft and Sweep features was used to create fluid surface transitions and maintain surface continuity across the hull. Both surface and solid modeling techniques were employed to refine the boat’s contours and achieve an efficient, streamlined shape suitable for water dynamics.Additionally, I modeled interior components, including the seat and steering wheel, with attention to ergonomic placement and spatial arrangement. This project helped deepen my understanding of surface modeling, design aesthetics, and functional geometry in marine design applications."
     },
     {
       id: 4,
       type: "key",
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
-      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      role: "Gearless Power Transmission Device  ",
+      company: "Gearless Power Transmission Device  ",
+      back_img: require("./assets/Sarang_assets/KeyProjects/GearlessPT/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/GearlessPT/front.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/GearlessPT/scr01.png"),
+      // scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      // scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      // scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      // video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "A minor project focused on studying and designing a simple gearless power transmission setup to understand motion transfer without using conventional gears.",
+      description:
+        "This minor project involved the design and study of a gearless power transmission system, aimed at understanding how mechanical motion can be transmitted without traditional gear mechanisms. The system was designed to transfer motion smoothly and efficiently, reducing basic energy losses caused by friction.Through simulation and analysis, I evaluated the system’s performance and motion characteristics, gaining practical insights into how linkages and couplings can be used to achieve power transmission. The design was also refined for compactness and durability, emphasizing ease of assembly and operation.This project served as an effective introduction to mechanical motion transfer concepts and the fundamentals of mechanism design."
     }
   ]
 };
@@ -295,7 +305,7 @@ const workExperiencesSecond = {
   display: true,
   experience: [
     {
-      id: 1,
+      id: 5,
       type: "key",
       role: "Boston Dynamics Inspired Quadruped Robot Design",
       back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
@@ -314,7 +324,7 @@ const workExperiencesSecond = {
       ]
     },
     {
-      id: 2,
+      id: 6,
       type: "key",
       role: "Front-End Developer",
       company: "Quora",
@@ -329,7 +339,7 @@ const workExperiencesSecond = {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      id: 3,
+      id: 7,
       type: "key",
       role: "Software Engineer Intern",
       company: "Airbnb",
@@ -344,7 +354,7 @@ const workExperiencesSecond = {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      id: 4,
+      id: 8,
       type: "key",
       role: "Software Engineer Intern",
       company: "Airbnb",
@@ -423,7 +433,7 @@ const bigProjects = {
       vid01: require("./assets/Sarang_assets/CNC_Enclosure/frame_vid.mp4"),
       projectName: "Design of an Enclosure for CNC Router 4540",
       projectDesc:
-        "I designed and built a sturdy protective enclosure for the CNC Router 4540 using a solid iron extrusion frame to ensure structural rigidity and long-term durability. The enclosure was fitted with acrylic sheets on all sides, except the bottom, to allow natural air circulation while providing full visibility of the machining area.A front access door was integrated, equipped with a handle and magnetic latch for smooth operation and secure closure. To maintain optimal working conditions, I installed an exhaust fan with a duct pipe to efficiently remove dust and heat generated during machining. Since the router is equipped with a laser engraving module, the ventilation system also helps dissipate the additional heat from the laser, ensuring safe and stable performance during operation",
+        "I designed and built a sturdy protective enclosure for the CNC Router 4540 using a solid iron extrusion frame to ensure structural rigidity and long-term durability. The enclosure was fitted with acrylic sheets on all sides, except the bottom, to allow natural air circulation while providing full visibility of the machining area.A front access door was integrated, equipped with a handle and magnetic latch for smooth operation and secure closure. To maintain optimal working conditions, I installed an exhaust fan with a duct pipe to efficiently remove dust and heat generated during machining. Since the router is equipped with a laser engraving module, the ventilation system also helps dissipate the additional heat from the laser, ensuring safe and stable performance during operation.",
       footerLink: [
         {
           name: "View Project",

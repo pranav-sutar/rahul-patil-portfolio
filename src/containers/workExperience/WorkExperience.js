@@ -7,19 +7,23 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
   const {isDark} = useContext(StyleContext);
+
   if (workExperiencesSecond.display) {
     return (
       <div id="experience">
         <Fade bottom duration={1000} distance="20px">
+          <h1 className="project-title">Key Projects</h1>
           <div className="experience-container" id="workExperience">
             <div>
-              {/* <h1 className="experience-heading">Key Projects</h1> */}
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
+                  // ensure we always have an id to navigate with
+                  const idForNav = card.id ?? card._id ?? i;
                   return (
                     <ExperienceCard
-                      key={i}
+                      key={`we1-${idForNav}`}
                       isDark={isDark}
+                      idForNav={idForNav}
                       cardInfo={{
                         company: card.company,
                         desc: card.desc,
@@ -27,7 +31,12 @@ export default function WorkExperience() {
                         companylogo: card.companylogo,
                         role: card.role,
                         descBullets: card.descBullets,
-                        back_img: card.back_img
+                        back_img: card.back_img,
+                        scr01: card.scr01,
+                        scr02: card.scr02,
+                        scr03: card.scr03,
+                        scr04: card.scr04,
+                        video_ref: card.video_ref
                       }}
                     />
                   );
@@ -36,16 +45,18 @@ export default function WorkExperience() {
             </div>
           </div>
         </Fade>
+
         <Fade bottom duration={1000} distance="20px">
-          <div className="experience-container" id="workExperience">
+          <div className="experience-container" id="workExperienceSecond">
             <div>
-              {/* <h1 className="experience-heading">Key Projects</h1> */}
               <div className="experience-cards-div">
-                {workExperiences.experience.map((card, i) => {
+                {workExperiencesSecond.experience.map((card, i) => {
+                  const idForNav = card.id ?? card._id ?? `second-${i}`;
                   return (
                     <ExperienceCard
-                      key={i}
+                      key={`we2-${idForNav}`}
                       isDark={isDark}
+                      idForNav={idForNav}
                       cardInfo={{
                         company: card.company,
                         desc: card.desc,
@@ -53,7 +64,12 @@ export default function WorkExperience() {
                         companylogo: card.companylogo,
                         role: card.role,
                         descBullets: card.descBullets,
-                        back_img: card.back_img
+                        back_img: card.back_img,
+                        scr01: card.scr01,
+                        scr02: card.scr02,
+                        scr03: card.scr03,
+                        scr04: card.scr04,
+                        video_ref: card.video_ref
                       }}
                     />
                   );
@@ -65,5 +81,6 @@ export default function WorkExperience() {
       </div>
     );
   }
+
   return null;
 }

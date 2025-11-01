@@ -30,14 +30,20 @@ const Main = () => {
     useState(true);
 
   useEffect(() => {
-    if (splashScreen.enabled) {
-      const splashTimer = setTimeout(
-        () => setIsShowingSplashAnimation(false),
-        splashScreen.duration
-      );
-      return () => {
-        clearTimeout(splashTimer);
-      };
+    // ✅ Check if splash was already shown during this browser session
+    const splashShown = sessionStorage.getItem("splashShown");
+
+    if (!splashShown && splashScreen.enabled) {
+      // show splash only once per browser session
+      setIsShowingSplashAnimation(true);
+      const splashTimer = setTimeout(() => {
+        setIsShowingSplashAnimation(false);
+        sessionStorage.setItem("splashShown", "true"); // mark splash as shown
+      }, splashScreen.duration);
+
+      return () => clearTimeout(splashTimer);
+    } else {
+      setIsShowingSplashAnimation(false);
     }
   }, []);
 
@@ -61,7 +67,7 @@ const Main = () => {
             <StartupProject />
             <WorkExperience />
             <Projects />
-            <Achievement />
+            {/* <Achievement /> */}
             {/* <Blogs /> */}
             {/* <Talks /> */}
             {/* <Twitter /> */}
