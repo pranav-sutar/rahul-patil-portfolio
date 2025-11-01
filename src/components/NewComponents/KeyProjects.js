@@ -83,6 +83,7 @@ export default function KeyProjects() {
             loop
             muted
             playsInline
+            preload="auto"
             controls={false}
             className="video-player"
           />
