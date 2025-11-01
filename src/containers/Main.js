@@ -21,6 +21,7 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 import Project01 from "../components/NewComponents/Project01";
+import Quote from "../components/NewComponents/Quote";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -53,6 +54,7 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
+            <Quote />
             <Skills />
             <StackProgress />
             <Education />
