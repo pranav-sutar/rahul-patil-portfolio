@@ -235,7 +235,7 @@ const workExperiences = {
       scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
       scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
       scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: "../public/videos/bosten_vid.mp4",
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       company: "Boston Dynamics Inspired Quadruped Robot Design",
       date: "June 2018 – Present",
       desc: "Modeled a quadruped robot in SolidWorks to explore legged locomotion mechanics, incorporating actuated joints and provisions for future sensor integration.",
