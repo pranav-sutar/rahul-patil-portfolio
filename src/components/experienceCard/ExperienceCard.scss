@@ -7,6 +7,21 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
 }
+.button-view-project button{
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #55198b;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+.button-view-project button:hover{
+  background-color: #004773;
+  color: white;
+  transition: 0.3s;
+
+}
 
 .experience-card-dark {
   position: relative;
@@ -36,6 +51,25 @@
   align-items: flex-end;
   justify-content: center;
 }
+// .experience-banner {
+//   background-color: #1e2435; /* dark tone complementing #171c28 */
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover; /* keeps aspect ratio, fills space nicely */
+//   border-radius: 10px 10px 0px 0px;
+//   -webkit-filter: blur(0px);
+//   -moz-filter: blur(0px);
+//   -o-filter: blur(0px);
+//   -ms-filter: blur(0px);
+//   filter: blur(0px);
+//   height: 11rem;
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: center;
+//   box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.05); /* subtle inner glow for depth */
+// }
+
+
 
 .experience-blurred_div {
   position: absolute;

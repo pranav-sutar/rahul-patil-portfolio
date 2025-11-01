@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Main from "./containers/Main";
 import BigProjects from "./components/NewComponents/BigProjects";
 import ScrollToTop from "./components/NewComponents/ScrollToTop"; // ✅ import
+import KeyProjects from "./components/NewComponents/KeyProjects";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/project/:id" component={BigProjects} />
+        <Route path="/key_project/:id" component={KeyProjects} />
       </Switch>
     </Router>
   );

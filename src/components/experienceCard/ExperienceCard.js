@@ -32,11 +32,19 @@ export default function ExperienceCard({cardInfo, isDark}) {
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+      <div
+        className="experience-banner"
+        style={{
+          backgroundImage: `url(${cardInfo.back_img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
+        }}
+      >
         <div className="experience-blurred_div"></div>
-        <div className="experience-div-company">
+        {/* <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
-        </div>
+        </div> */}
 
         <img
           crossOrigin={"anonymous"}
@@ -57,7 +65,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.role}
         </h5>
-        <h5
+        {/* <h5
           className={
             isDark
               ? "experience-text-date dark-mode-text"
@@ -65,7 +73,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
           }
         >
           {cardInfo.date}
-        </h5>
+        </h5> */}
         <p
           className={
             isDark
@@ -78,6 +86,18 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
+
+        <div
+          className="button-view-project"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            widows: "100%",
+            justifyContent: "center"
+          }}
+        >
+          <button>View Project</button>
+        </div>
       </div>
     </div>
   );

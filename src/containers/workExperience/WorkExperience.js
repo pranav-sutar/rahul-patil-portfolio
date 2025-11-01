@@ -13,9 +13,9 @@ export default function WorkExperience() {
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container" id="workExperience">
             <div>
-              <h1 className="experience-heading">Key Projects</h1>
+              {/* <h1 className="experience-heading">Key Projects</h1> */}
               <div className="experience-cards-div">
-                {workExperiencesSecond.experience.map((card, i) => {
+                {workExperiences.experience.map((card, i) => {
                   return (
                     <ExperienceCard
                       key={i}
@@ -26,7 +26,8 @@ export default function WorkExperience() {
                         date: card.date,
                         companylogo: card.companylogo,
                         role: card.role,
-                        descBullets: card.descBullets
+                        descBullets: card.descBullets,
+                        back_img: card.back_img
                       }}
                     />
                   );
@@ -51,7 +52,8 @@ export default function WorkExperience() {
                         date: card.date,
                         companylogo: card.companylogo,
                         role: card.role,
-                        descBullets: card.descBullets
+                        descBullets: card.descBullets,
+                        back_img: card.back_img
                       }}
                     />
                   );

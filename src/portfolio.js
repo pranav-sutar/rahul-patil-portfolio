@@ -223,12 +223,20 @@ const experienceData = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Boston Dynamics Inspired Quadruped Robot Design ",
-      company: "Boston Dynamics Inspired Quadruped Robot Design   ",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      id: 1,
+      type: "key",
+      role: "Boston Dynamics Inspired Quadruped Robot Design",
+      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      company: "Boston Dynamics Inspired Quadruped Robot Design",
       date: "June 2018 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
@@ -237,35 +245,67 @@ const workExperiences = {
       ]
     },
     {
+      id: 2,
+      type: "key",
       role: "Front-End Developer",
       company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      back_img: require("./assets/Sarang_assets/KeyProjects/Quadraped/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Quadraped/front.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
+      id: 3,
+      type: "key",
       role: "Software Engineer Intern",
       company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
+      id: 4,
+      type: "key",
       role: "Software Engineer Intern",
       company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
 const workExperiencesSecond = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Boston Dynamics Inspired Quadruped Robot Design ",
-      company: "Boston Dynamics Inspired Quadruped Robot Design   ",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      id: 1,
+      type: "key",
+      role: "Boston Dynamics Inspired Quadruped Robot Design",
+      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      company: "Boston Dynamics Inspired Quadruped Robot Design",
       date: "June 2018 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
@@ -274,25 +314,49 @@ const workExperiencesSecond = {
       ]
     },
     {
+      id: 2,
+      type: "key",
       role: "Front-End Developer",
       company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      back_img: require("./assets/Sarang_assets/KeyProjects/Quadraped/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Quadraped/front.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
+      id: 3,
+      type: "key",
       role: "Software Engineer Intern",
       company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
+      id: 4,
+      type: "key",
       role: "Software Engineer Intern",
       company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
