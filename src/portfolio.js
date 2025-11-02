@@ -343,19 +343,33 @@ const workExperiencesSecond = {
       type: "key",
       role: "Embedded Systems and Interfacing",
       company: "Embedded Systems and Interfacing",
-      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
-      title01: "LCD Interfacing",
-      scr01: require("./assets/Sarang_assets/KeyProjects/Embedded/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Embedded/scr02.png"),
-      title02: "PWM Control",
-      scr03: require("./assets/Sarang_assets/KeyProjects/Embedded/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Embedded/scr04.png"),
-      scr05: require("./assets/Sarang_assets/KeyProjects/Embedded/scr02.png"),
-      title03: "Seven Segment Display Interfacing",
-      scr06: require("./assets/Sarang_assets/KeyProjects/Embedded/scr03.png"),
-      scr07: require("./assets/Sarang_assets/KeyProjects/Embedded/scr04.png"),
-      scr08: require("./assets/Sarang_assets/KeyProjects/Embedded/scr04.png"),
+      back_img: require("./assets/Sarang_assets/KeyProjects/Embedded/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Embedded/front.png"),
+      sections: [
+        {
+          title: "LCD Interfacing",
+          images: [
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr01.png"),
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr02.png")
+          ]
+        },
+        {
+          title: "PWM Control",
+          images: [
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr03.png"),
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr04.png")
+          ]
+        },
+        {
+          title: "Seven Segment Display Interfacing",
+          images: [
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr05.png"),
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr06.png"),
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr07.png"),
+            require("./assets/Sarang_assets/KeyProjects/Embedded/scr08.png")
+          ]
+        }
+      ],
       // video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
       desc: "Designed and tested multiple microcontroller interfacing modules, including LCD, PWM, and Seven Segment Display systems, to control and display real-time data.",
@@ -365,17 +379,32 @@ const workExperiencesSecond = {
     {
       id: 8,
       type: "key",
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
-      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      role: "Virtual Smart Plant Monitor and Servo Control System ",
+      company: "Virtual Smart Plant Monitor and Servo Control System ",
+      back_img: require("./assets/Sarang_assets/KeyProjects/PlantMonitor/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/PlantMonitor/front.png"),
+      // video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      sections: [
+        {
+          title: "Plant Monitoring System",
+          images: [
+            require("./assets/Sarang_assets/KeyProjects/PlantMonitor/scr02.png"),
+            require("./assets/Sarang_assets/KeyProjects/PlantMonitor/scr01.png")
+          ]
+        },
+        {
+          title: "Servo Control System",
+          images: [
+            require("./assets/Sarang_assets/KeyProjects/PlantMonitor/scr03.png"),
+            require("./assets/Sarang_assets/KeyProjects/PlantMonitor/scr04.png"),
+            require("./assets/Sarang_assets/KeyProjects/PlantMonitor/scr05.png")
+          ]
+        }
+      ],
+      desc: "Built a virtual smart plant monitoring system with Arduino, using sensor feedback and a potentiometer to simulate environmental input and control automated watering via a servo.",
+      description:
+        "This project involved developing a Virtual Smart Plant Monitoring System that simulates environmental sensing and automated watering through sensor feedback control logic. The system conceptually mimics real-world smart irrigation by monitoring input signals and actuating responses based on environmental conditions.A potentiometer was interfaced with an Arduino UNO to simulate sensor input, which was used to modulate a servo motor’s position through an analog signal. This setup represented how soil moisture data can control a watering mechanism in automated plant systems.The project provided hands-on experience with Arduino interfacing, analog-to-digital signal processing, and feedback-based actuation, offering practical insights into the design and logic of smart automation systems"
     }
   ]
 };

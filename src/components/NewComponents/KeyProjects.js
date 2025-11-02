@@ -7,13 +7,13 @@ export default function KeyProjects() {
   const {id} = useParams();
   const history = useHistory();
 
-  // Merge both datasets
+  // Merge both sets
   const allProjects = [
     ...(workExperiences?.experience || []),
     ...(workExperiencesSecond?.experience || [])
   ];
 
-  // Find project by id or index
+  // Find the project by id or index
   const project =
     allProjects.find(
       (p, i) =>
@@ -33,47 +33,95 @@ export default function KeyProjects() {
     );
   }
 
-  // ✅ Dynamically collect all images starting with "scr"
-  const imageKeys = Object.keys(project).filter(key => key.startsWith("scr"));
-  const images = imageKeys.map(key => project[key]);
+  // ✅ Detect if project uses new sections-based format
+  const hasSections =
+    Array.isArray(project.sections) && project.sections.length > 0;
+
+  // ✅ For legacy projects (with scrXX/titleXX)
+  const titleKeys = Object.keys(project)
+    .filter(key => key.startsWith("title"))
+    .sort();
+
+  const imageKeys = Object.keys(project)
+    .filter(key => key.startsWith("scr"))
+    .sort();
+
+  const groupImagesByTitles = () => {
+    const groups = [];
+    for (let i = 0; i < titleKeys.length; i++) {
+      const titleKey = titleKeys[i];
+      const nextTitleKey = titleKeys[i + 1];
+
+      const currentTitleNum = parseInt(titleKey.replace("title", ""));
+      const nextTitleNum = nextTitleKey
+        ? parseInt(nextTitleKey.replace("title", ""))
+        : Infinity;
+
+      const imagesForTitle = imageKeys
+        .filter(imgKey => {
+          const imgNum = parseInt(imgKey.replace("scr", ""));
+          return (
+            imgNum >= (currentTitleNum - 1) * 3 + 1 && imgNum < nextTitleNum * 3
+          );
+        })
+        .map(imgKey => project[imgKey])
+        .filter(Boolean);
+
+      groups.push({
+        title: project[titleKey],
+        images: imagesForTitle
+      });
+    }
+    return groups;
+  };
+
+  const titledGroups = hasSections ? project.sections : groupImagesByTitles();
+
+  const hasMultipleTitles = titledGroups.length > 0;
+
+  const images =
+    !hasMultipleTitles && imageKeys.map(key => project[key]).filter(Boolean);
 
   return (
     <div className="keyproject-container">
+      {/* Back Button */}
       <button className="back-btn" onClick={() => history.goBack()}>
         ⬅ Back
       </button>
 
+      {/* Project Title */}
       <h1 className="project-title">{project.role || "Project Details"}</h1>
 
+      {/* Header Section */}
       <div className="project-header">
         {project.companylogo && (
           <img
             src={project.companylogo}
-            alt={project.company}
+            alt={project.company || "Project Logo"}
             className="project-logo"
           />
         )}
         <div>
-          {/* <h2>{project.company}</h2> */}
-          {/* <p className="project-date">{project.date}</p> */}
+          {/* {project.company && <p className="project-date">{project.company}</p>} */}
+          {/* {project.date && <p className="project-date">{project.date}</p>} */}
         </div>
       </div>
 
-      <p className="project-desc">{project.description}</p>
+      {/* Description */}
+      {project.description && (
+        <p className="project-desc">{project.description}</p>
+      )}
 
       {/* Highlights */}
-      {/* {project.descBullets && project.descBullets.length > 0 && (
-        <>
-          <h3>Highlights:</h3>
-          <ul className="project-bullets">
-            {project.descBullets.map((b, i) => (
-              <li key={i}>{b}</li>
-            ))}
-          </ul>
-        </>
-      )} */}
+      {project.descBullets && project.descBullets.length > 0 && (
+        <ul className="project-bullets">
+          {project.descBullets.map((bullet, i) => (
+            <li key={i}>{bullet}</li>
+          ))}
+        </ul>
+      )}
 
-      {/* ✅ Auto-playing, looping video */}
+      {/* Video Section */}
       {project.video_ref && (
         <div className="project-video">
           <h3>Project Demo Video</h3>
@@ -85,15 +133,31 @@ export default function KeyProjects() {
             playsInline
             preload="auto"
             controls={false}
-            className="video-player"
           />
         </div>
       )}
 
-      {/* ✅ Dynamic Images */}
-      {images.length > 0 && (
-        <>
-          <h3 className="ref-title">Reference Images</h3>
+      {/* ✅ Reference Images Section */}
+      <div className="reference-section">
+        <h3>Reference Images</h3>
+
+        {hasMultipleTitles ? (
+          titledGroups.map((group, i) => (
+            <div key={i} className="image-group">
+              <h4 className="group-title">{group.title}</h4>
+              <div className="project-images">
+                {group.images.map((img, j) => (
+                  <img
+                    key={j}
+                    src={img}
+                    alt={`Group ${i + 1} - Image ${j + 1}`}
+                    className="project-img"
+                  />
+                ))}
+              </div>
+            </div>
+          ))
+        ) : (
           <div className="project-images">
             {images.map((img, i) => (
               <img
@@ -104,8 +168,8 @@ export default function KeyProjects() {
               />
             ))}
           </div>
-        </>
-      )}
+        )}
+      </div>
     </div>
   );
 }
