@@ -50,6 +50,11 @@ function Header() {
               <a href="#skills">Research Interests</a>
             </li>
           )}
+          {viewSkills && (
+            <li>
+              <a href="#big-projects">Big Projects</a>
+            </li>
+          )}
           {viewExperience && (
             <li>
               <a href="#experience">Key Projects</a>
@@ -60,11 +65,11 @@ function Header() {
               <a href="#opensource">Open Source</a>
             </li>
           )} */}
-          {viewAchievement && (
+          {/* {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
             </li>
-          )}
+          )} */}
           {/* {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
@@ -85,9 +90,9 @@ function Header() {
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
+            {/* <a>
               <ToggleSwitch />
-            </a>
+            </a> */}
           </li>
         </ul>
       </header>

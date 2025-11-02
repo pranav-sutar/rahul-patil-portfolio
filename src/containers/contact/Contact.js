@@ -6,6 +6,7 @@ import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import icon from "../../assets/images/chat.png";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -14,7 +15,12 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <span className="contact-title-span-css">
+              <h1 className="heading contact-title">{contactInfo.title} </h1>
+              <div className="title-icon-div">
+                <img src={icon} alt="" />
+              </div>
+            </span>
             <p
               className={
                 isDark

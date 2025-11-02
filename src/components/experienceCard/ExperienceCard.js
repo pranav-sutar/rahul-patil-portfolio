@@ -120,7 +120,6 @@ export default function ExperienceCard({cardInfo, isDark, idForNav}) {
             justifyContent: "center"
           }}
         >
-          {/* IMPORTANT: use arrow function so handleViewProject is NOT called on render */}
           <button onClick={e => handleViewProject(e)}>View Project</button>
         </div>
       </div>

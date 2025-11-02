@@ -116,3 +116,57 @@
   color: #ffffff;
   font-size: 1.6rem;
 }
+
+/* --- Existing desktop styles remain as they are --- */
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .skills-bar {
+    line-height: 2rem;
+    margin: 10px 0;
+  }
+
+  .container-experience {
+    flex-direction: column; /* stack image above text */
+    align-items: flex-start;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .container-experience .left {
+    width: 100%;
+    justify-content: center; /* center logo on mobile */
+  }
+
+  .container-experience .left img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+  }
+
+  .container-experience .right {
+    width: 100%;
+    gap: 3px;
+  }
+
+  .container-experience .right span {
+    font-size: 1rem; /* smaller text */
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  .container-experience .right span b {
+    font-size: 1.2rem;
+  }
+
+  .skills-heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

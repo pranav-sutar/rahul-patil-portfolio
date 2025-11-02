@@ -235,7 +235,7 @@ const workExperiences = {
       scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
       scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
       scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      video_ref: "/videos/bosten_vid.mp4",
       company: "Boston Dynamics Inspired Quadruped Robot Design",
       date: "June 2018 – Present",
       desc: "Modeled a quadruped robot in SolidWorks to explore legged locomotion mechanics, incorporating actuated joints and provisions for future sensor integration.",
@@ -259,7 +259,7 @@ const workExperiences = {
       // scr05: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr04.png"),
       // scr03: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr05.png"),
       scr04: require("./assets/Sarang_assets/KeyProjects/Quadraped/scr06.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Quadraped/quarduped_vid.mp4"),
+      video_ref: "/videos/quarduped_vid.mp4",
       date: "May 2017 – May 2018",
       desc: "Designed a quadruped robot with adaptive leg mechanisms capable of moving smoothly over uneven terrain, climbing stairs, and maintaining balance during motion.",
       description:
@@ -276,7 +276,7 @@ const workExperiences = {
       scr02: require("./assets/Sarang_assets/KeyProjects/Boat/scr02.png"),
       scr03: require("./assets/Sarang_assets/KeyProjects/Boat/scr03.png"),
       scr04: require("./assets/Sarang_assets/KeyProjects/Boat/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Boat/boat_vid.mp4"),
+      video_ref: "/videos/boat_vid.mp4",
       date: "Jan 2015 – Sep 2015",
       desc: "This project focused on designing a 3D boat model in SolidWorks to explore complex surface modeling techniques and achieve a realistic, hydrodynamic form.",
       description:
@@ -290,9 +290,9 @@ const workExperiences = {
       back_img: require("./assets/Sarang_assets/KeyProjects/GearlessPT/back.png"),
       companylogo: require("./assets/Sarang_assets/KeyProjects/GearlessPT/front.png"),
       scr01: require("./assets/Sarang_assets/KeyProjects/GearlessPT/scr01.png"),
-      // scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      // scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      // scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/GearlessPT/scr02.jpeg"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/GearlessPT/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/GearlessPT/src04.jpeg"),
       // video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
       desc: "A minor project focused on studying and designing a simple gearless power transmission setup to understand motion transfer without using conventional gears.",
@@ -307,51 +307,60 @@ const workExperiencesSecond = {
     {
       id: 5,
       type: "key",
-      role: "Boston Dynamics Inspired Quadruped Robot Design",
-      back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
-      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
-      company: "Boston Dynamics Inspired Quadruped Robot Design",
+      role: "Kinematic and Dynamic Analysis of a Robotic Joint",
+      company: "Kinematic and Dynamic Analysis of a Robotic Joint",
+      back_img: require("./assets/Sarang_assets/KeyProjects/Analysis/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Analysis/front.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Analysis/scr01.png"),
+      // scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
+      // scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
+      // scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      // video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Analyzed the motion characteristics of a robotic joint by computing position, velocity, and acceleration profiles using kinematic equations and MATLAB visualization.",
+      description:
+        "This project focused on the kinematic and dynamic analysis of a single robotic joint, with the goal of studying its motion smoothness and trajectory performance over time. Using given motion parameters — θ₀ = 120°, θf = 90°, θ̇₀ = 5°/s, θ̇f = –3°/s, t₀ = 0 s, and tf = 3 s — I implemented kinematic equations to calculate the joint’s position, velocity, and acceleration trajectories throughout its motion.The results were plotted as θ(t), θ̇(t), and θ̈(t) versus time, allowing for detailed observation of joint behavior, motion transitions, and smoothness of operation. To better understand system response, I also created MATLAB visualization scripts to study how varying control inputs and boundary conditions affect the manipulator’s dynamic performance.This project strengthened my understanding of robot joint kinematics, motion profiling, and trajectory validation techniques commonly applied in robotic motion planning and control analysis."
     },
     {
       id: 6,
       type: "key",
-      role: "Front-End Developer",
-      company: "Quora",
-      back_img: require("./assets/Sarang_assets/KeyProjects/Quadraped/back.png"),
-      companylogo: require("./assets/Sarang_assets/KeyProjects/Quadraped/front.png"),
-      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      role: "Turtlesim Shape Drawing using ROS (Python)",
+      company: "Turtlesim Shape Drawing using ROS (Python)",
+      back_img: require("./assets/Sarang_assets/KeyProjects/Turtlesim/back.png"),
+      companylogo: require("./assets/Sarang_assets/KeyProjects/Turtlesim/front.png"),
+      scr01: require("./assets/Sarang_assets/KeyProjects/Turtlesim/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Turtlesim/scr02.png"),
+      scr03: require("./assets/Sarang_assets/KeyProjects/Turtlesim/scr03.png"),
+      // scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
+      // video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Programmed the ROS Turtlesim simulator to draw geometric patterns while learning motion control, node communication, and coordinate-based movement.",
+      description:
+        "This project involved programming and controlling the Turtlesim simulator in ROS to perform motion-based tasks such as drawing shapes including squares, triangle, and star. I developed ROS nodes using publishers and subscribers to control the turtle’s motion by sending velocity and position commands in real time.The project applied basic motion planning, coordinate control, and path-following concepts to generate smooth trajectories for each shape. It also helped strengthen my understanding of ROS communication architecture, including node interaction, topic publishing, and message exchange.Through this exercise, I gained hands-on experience in ROS-based motion control, trajectory generation, and the fundamentals of robot simulation environments."
     },
     {
       id: 7,
       type: "key",
-      role: "Software Engineer Intern",
-      company: "Airbnb",
+      role: "Embedded Systems and Interfacing",
+      company: "Embedded Systems and Interfacing",
       back_img: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
       companylogo: require("./assets/Sarang_assets/KeyProjects/Bosten/front_test.png"),
-      scr01: require("./assets/Sarang_assets/KeyProjects/Bosten/scr01.png"),
-      scr02: require("./assets/Sarang_assets/KeyProjects/Bosten/scr02.png"),
-      scr03: require("./assets/Sarang_assets/KeyProjects/Bosten/scr03.png"),
-      scr04: require("./assets/Sarang_assets/KeyProjects/Bosten/scr04.png"),
-      video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
+      title01: "LCD Interfacing",
+      scr01: require("./assets/Sarang_assets/KeyProjects/Embedded/scr01.png"),
+      scr02: require("./assets/Sarang_assets/KeyProjects/Embedded/scr02.png"),
+      title02: "PWM Control",
+      scr03: require("./assets/Sarang_assets/KeyProjects/Embedded/scr03.png"),
+      scr04: require("./assets/Sarang_assets/KeyProjects/Embedded/scr04.png"),
+      scr05: require("./assets/Sarang_assets/KeyProjects/Embedded/scr02.png"),
+      title03: "Seven Segment Display Interfacing",
+      scr06: require("./assets/Sarang_assets/KeyProjects/Embedded/scr03.png"),
+      scr07: require("./assets/Sarang_assets/KeyProjects/Embedded/scr04.png"),
+      scr08: require("./assets/Sarang_assets/KeyProjects/Embedded/scr04.png"),
+      // video_ref: require("./assets/Sarang_assets/KeyProjects/Bosten/bosten_vid.mp4"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Designed and tested multiple microcontroller interfacing modules, including LCD, PWM, and Seven Segment Display systems, to control and display real-time data.",
+      description:
+        "This project focused on developing and testing fundamental microcontroller interfacing techniques for real-time control and data display applications. I implemented LCD interfacing to present sensor readings and system parameters, ensuring reliable communication between hardware components.Using Pulse Width Modulation (PWM), I developed control algorithms for motor speed regulation and LED brightness modulation, demonstrating the use of microcontroller-based analog control. Additionally, I designed and tested Seven Segment Display (SSD) interfacing to display numeric outputs and system status indications.Through this project, I gained hands-on experience in embedded system programming, signal control, and hardware interfacing, strengthening my foundation in microcontroller-based automation and instrumentation."
     },
     {
       id: 8,
@@ -391,7 +400,7 @@ const bigProjects = {
       scr02: require("./assets/Sarang_assets/Biped/scr02.png"),
       scr03: require("./assets/Sarang_assets/Biped/scr03.png"),
       scr04: require("./assets/Sarang_assets/Biped/scr04.png"),
-      vid01: require("./assets/Sarang_assets/Biped/Biped_vid.mp4"),
+      vid01: "/videos/Biped_vid.mp4",
 
       projectName: "Design of a Support Frame for Walking Biped Robot ",
       projectDesc:
@@ -411,7 +420,7 @@ const bigProjects = {
       scr02: require("./assets/Sarang_assets/Ankle/scr03.png"),
       scr03: require("./assets/Sarang_assets/Ankle/scr04.png"),
       scr04: require("./assets/Sarang_assets/Ankle/scr05.png"),
-      vid01: require("./assets/Sarang_assets/Ankle/Ankle_vid.mp4"),
+      vid01: "/videos/Ankle_vid.mp4",
       projectName: "Desing of an Ankle joint for Biped Robot",
       projectDesc:
         "I developed a mechanically optimized single-axis ankle joint for a biped robot, engineered to deliver strength, precision, and smooth motion. The joint is actuated by a double acting pneumatic actuator, providing ±60° symmetric movement after integrating physical motion constraints to mimic realistic ankle dynamics.To achieve a compact and efficient design, I offset mounted the actuator from the joint axis and refined the structure through iterative design and optimization, ensuring mechanical robustness and manufacturability. The entire assembly was modeled and detailed in SolidWorks, including precise 3D CAD models and fabrication ready drawings.An encoder system was also integrated to capture real time positional feedback of the joint, enabling accurate motion tracking and control during operation.",
@@ -430,7 +439,7 @@ const bigProjects = {
       scr02: require("./assets/Sarang_assets/CNC_Enclosure/scr03.png"),
       scr03: require("./assets/Sarang_assets/CNC_Enclosure/scr04.png"),
       scr04: require("./assets/Sarang_assets/CNC_Enclosure/scr05.png"),
-      vid01: require("./assets/Sarang_assets/CNC_Enclosure/frame_vid.mp4"),
+      vid01: "/videos/frame_vid.mp4",
       projectName: "Design of an Enclosure for CNC Router 4540",
       projectDesc:
         "I designed and built a sturdy protective enclosure for the CNC Router 4540 using a solid iron extrusion frame to ensure structural rigidity and long-term durability. The enclosure was fitted with acrylic sheets on all sides, except the bottom, to allow natural air circulation while providing full visibility of the machining area.A front access door was integrated, equipped with a handle and magnetic latch for smooth operation and secure closure. To maintain optimal working conditions, I installed an exhaust fan with a duct pipe to efficiently remove dust and heat generated during machining. Since the router is equipped with a laser engraving module, the ventilation system also helps dissipate the additional heat from the laser, ensuring safe and stable performance during operation.",
@@ -584,7 +593,7 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me "),
   subtitle: "Let’s engineer something awesome, Starting with your message!",
   // number: "+91 9175289138 ",
   email_address: "rahuldpatil17@gmail.com"
