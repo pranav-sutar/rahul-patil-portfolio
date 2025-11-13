@@ -29,7 +29,7 @@ export default function BigProjects() {
         <h1 className="big-project-title">{project.projectName}</h1>
 
         {/* Video Section */}
-        {video && (
+        {/* {video && (
           <div className="big-project-video-container">
             <video
               src={video}
@@ -40,13 +40,13 @@ export default function BigProjects() {
               className="big-project-video"
             />
           </div>
-        )}
+        )} */}
 
         <p className="big-project-description">{project.projectDesc}</p>
-        <p className="Ref_img_title">Reference Images</p>
+        {/* <p className="Ref_img_title">Reference Images</p> */}
 
         {/* Images Section */}
-        <div className="big-project-image-row">
+        {/* <div className="big-project-image-row">
           {images.map((img, idx) => (
             <img
               key={idx}
@@ -55,7 +55,7 @@ export default function BigProjects() {
               className="big-project-image"
             />
           ))}
-        </div>
+        </div> */}
       </Fade>
 
       {/* Description */}
