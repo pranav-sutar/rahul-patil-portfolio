@@ -1,3 +1,88 @@
+// @import "../../_globalColor";
+
+// .skills-main-div {
+//   display: flex;
+//   width: 100%;
+//   overflow: hidden;
+// }
+
+// .skills-text-div {
+//   margin-left: 50px;
+// }
+
+// .skills-main-div > * {
+//   flex: 1;
+//   margin-bottom: 30px;
+// }
+
+// .skills-image-div > img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// .skills-heading {
+//   font-size: 56px;
+//   font-weight: 400;
+// }
+// .subTitle {
+//   color: $subTitle;
+// }
+
+// /* Media Query */
+// @media (max-width: 1380px) {
+//   .skills-heading {
+//     font-size: 40px;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .skills-heading {
+//     font-size: 30px;
+//     text-align: center;
+//   }
+//   .greeting-text-p {
+//     font-size: 16px;
+//     line-height: normal;
+//   }
+//   .skills-main-div {
+//     flex-direction: column;
+//   }
+//   .skills-text-div {
+//     margin-left: 0px;
+//     margin: 20px;
+//   }
+//   .skills-text {
+//     font-size: 16px;
+//   }
+//   .skills-text-subtitle {
+//     font-size: 16px;
+//     text-align: center;
+//   }
+//   .skills-image-div {
+//     /* display: none; */
+//     order: 2;
+//   }
+
+// }
+
+// // y extra: lottie height adjustment -- (T)
+// .skills-image-div {
+//   height: 100%; /* Default for mobile */
+// }
+
+// /* For desktop screens (width ≥ 768px or whatever breakpoint you prefer) */
+// @media (min-width: 768px) {
+//   .skills-image-div {
+//     height: 200px;
+//   }
+// }
+
+// // y extra: lottie height adjustment -- (B)
+
+// .lottie-research{
+//   height: 200px;
+// }
+
+
 @import "../../_globalColor";
 
 .skills-main-div {
@@ -61,24 +146,40 @@
     /* display: none; */
     order: 2;
   }
-
 }
 
-// y extra: lottie height adjustment -- (T)
+/* ------------------------------- */
+/* FIX FOR LOTTIE CROPPING (ADDED) */
+/* ------------------------------- */
+
+/* Remove fixed height — allow natural scaling */
 .skills-image-div {
-  height: 100%; /* Default for mobile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+  overflow: visible;
+  padding: 20px;
 }
 
-/* For desktop screens (width ≥ 768px or whatever breakpoint you prefer) */
-@media (min-width: 768px) {
-  .skills-image-div {
-    height: 200px;
+/* Ensure Lottie SVG/Canvas scales properly */
+.skills-image-div canvas,
+.skills-image-div svg {
+  width: 100%;
+  max-width: 450px;   /* desktop size */
+  height: auto !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .skills-image-div canvas,
+  .skills-image-div svg {
+    max-width: 300px;
   }
 }
 
-// y extra: lottie height adjustment -- (B)
-
-.lottie-research{
-  height: 200px;
+/* If using a custom class */
+.lottie-research {
+  height: auto !important;
 }
 
